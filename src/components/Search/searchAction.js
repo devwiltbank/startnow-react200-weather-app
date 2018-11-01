@@ -26,7 +26,7 @@ export function getWeather(city) {
     console.log('getweather fired')
     return {
         type: types.WEATHER_INFO,
-        payload: axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=430f298a7b1fe6ac274239d8eaee8545&units=imperial`)
+        payload: axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=430f298a7b1fe6ac274239d8eaee8545&units=imperial`)
         .then(respond => respond.data)
         .catch(err => console.log(err))
     }
