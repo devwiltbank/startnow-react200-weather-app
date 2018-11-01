@@ -6,9 +6,9 @@ import History from '../components/History';
 export default class App extends React.Component {
   render() {
     return (
-    <div className='background'>
+    
       <div className='container'>
-       <div className='jumbotron mt-2'>
+       <div className='jumbotron mt-3'>
         <h1>Origin Weather Application</h1>
         <h6>Always know if you'll need an umbrella!</h6>
        </div>
@@ -22,9 +22,7 @@ export default class App extends React.Component {
           </div>
         </div>
         </div>
-      </div>
-
-       
+     
     );
   }
 }
